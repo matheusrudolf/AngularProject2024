@@ -1,0 +1,126 @@
+{
+  "dados": [
+    {
+      "ano": 2024,
+      "id": 151,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 4,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 1500.0
+    },
+    {
+      "ano": 2024,
+      "id": 177,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 5,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 1500.0
+    },
+    {
+      "ano": 2024,
+      "id": 216,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 6,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 1500.0
+    },
+    {
+      "ano": 2023,
+      "id": 722,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 4,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2023,
+      "id": 764,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 5,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2023,
+      "id": 800,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 6,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2023,
+      "id": 1348,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 7,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2023,
+      "id": 1382,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 8,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2023,
+      "id": 1429,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 9,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 2000.0
+    },
+    {
+      "ano": 2025,
+      "id": 2033,
+      "id_categoria_venda": 8,
+      "id_dealer": 1,
+      "mes": 2,
+      "nome_categoria_venda": "Previsão de vendas SPNV Jaguar",
+      "nome_dealer": "Extrema - Fortaleza",
+      "quantidade": 0,
+      "tipo_valor": "S",
+      "valor": 1500.0
+    }
+  ],
+  "quantidade": 0,
+  "total_registros": 2053
+}

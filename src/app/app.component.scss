@@ -1,0 +1,19 @@
+:host ::ng-deep .field > label {
+    margin-bottom: 0 !important;
+}
+
+:host ::ng-deep .p-button {
+    width: 34px;
+    height: 34px !important;
+}
+
+:host ::ng-deep .p-toolbar {
+    padding: 0.2rem;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+:host ::ng-deep tr:hover {
+    background-color: rgb(151, 248, 248);
+    color: black;
+}

@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+th {
+    color: #ffffff;
+    background-color: #212529;
+    border-color: #6c757d
+}
+
+.linha-selecionada {
+    background-color: #16ceeb;
+    color: white;
+}
+
+.group-field {
+    width: fit-content;
+    padding: 7px;
+}

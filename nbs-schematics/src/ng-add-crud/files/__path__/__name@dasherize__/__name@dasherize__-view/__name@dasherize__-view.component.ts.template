@@ -1,0 +1,43 @@
+import { Component } from '@angular/core';
+import { IColunas, IBtnAcoesCustom, ITabela } from '@model/components/nbs-tabelas';
+import { ControleService } from '@shared/services/controle.service';
+import { CrudViewAbstractComponent } from '@shared/templates/crud-view-template.abstract';
+import { IToolbar } from '@model/components/nbs-toolbar';
+import { ConfirmationService, MessageService } from 'primeng/api';
+
+@Component({
+    selector: 'nbs-<%= selector %>-view',
+    templateUrl: '../../../shared/templates/crud-view-template.html',
+    styleUrls: ['./<%= dasherize(name) %>-view.component.scss']
+})
+export class <%= classify(name) %>ViewComponent extends CrudViewAbstractComponent {
+    nomeTabela: string = '<%= selector %>';
+    toolbarProps: IToolbar = { btnCircular: false, btnSombreado: false, apenasXlsx: true, tabelaCrud: true };
+    tabelaProps: ITabela = { dados: [], colunas: [], colunasCustom: true, acoes: true, acoesCustom: false, btnAcoesCustom: [] };
+    btnAcoesCustom: IBtnAcoesCustom[] = [];
+
+    constructor(requestService: ControleService,
+        messageService: MessageService,
+        confirmationService: ConfirmationService) {
+        super(requestService, messageService, confirmationService);
+    }
+
+    protected constroiColunasDinamicas(colunas: IColunas[]): IColunas[] {
+        /** Template de construção das colunas da tabela CRUD */
+        return colunas = [
+            { field: 'campo', header: 'Nome', width: 'auto' },
+        ];
+    }
+
+    protected constroiColunaAcaoCustom(botoes: IBtnAcoesCustom[]): IBtnAcoesCustom[] {
+        /** Template de construção de botões customizados, caso `tabelaProps.acoes` esteja habilitado */
+        return botoes = [];
+    }
+
+    protected capturaDescricaoRegistroRemocao(rowData: any): string {
+        /** Template para retornar valor de descrição para mensagem de exclusão,
+            utilize o parâmetro rowData, caso tenha a model local do projeto, importe de acordo
+            com a entidade do componente em questão Ex.: IPrevisaoVenda */
+        return 'Utilize o parâmetro `rowData` para capturar o campo desejado';
+    }
+}

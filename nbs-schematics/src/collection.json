@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "A blank schematic.",
+      "factory": "./ng-add/index#nbsSchematics"
+    },
+    "ng-add-crud": {
+      "description": "Create component",
+      "factory": "./ng-add-crud/index#addCrudSchematics",
+      "schema": "./ng-add-crud/schema.json"
+    }
+  }
+}

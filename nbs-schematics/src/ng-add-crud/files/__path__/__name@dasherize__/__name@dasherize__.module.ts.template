@@ -1,0 +1,36 @@
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { DecimalPipe, registerLocaleData } from '@angular/common';
+import { <%= classify(name) %>Component } from './<%= selector %>.component';
+import { <%= classify(name) %>ViewComponent } from './<%= selector %>-view/<%= selector %>-view.component';
+import { <%= classify(name) %>FiltroComponent } from './<%= selector %>-filtro/<%= selector %>-filtro.component';
+import { <%= classify(name) %>CadastroComponent } from './<%= selector %>-cadastro/<%= selector %>-cadastro.component';
+import { ConfirmationService, MessageService } from 'primeng/api';
+import { SharedComponentsModule } from '@shared/components/shared-components.module';
+import localePt from '@angular/common/locales/pt';
+
+registerLocaleData(localePt);
+
+@NgModule({
+  imports: [
+    SharedComponentsModule
+  ],
+  declarations: [
+    <%= classify(name) %>Component,
+    <%= classify(name) %>ViewComponent,
+    <%= classify(name) %>FiltroComponent,
+    <%= classify(name) %>CadastroComponent
+  ],
+  exports: [
+    <%= classify(name) %>Component,
+    <%= classify(name) %>ViewComponent,
+    <%= classify(name) %>FiltroComponent,
+    <%= classify(name) %>CadastroComponent
+  ],
+  providers: [
+    MessageService,
+    ConfirmationService,
+    DecimalPipe,
+    { provide: LOCALE_ID, useValue: 'pt' }
+  ]
+})
+export class <%= classify(name) %>Module { }

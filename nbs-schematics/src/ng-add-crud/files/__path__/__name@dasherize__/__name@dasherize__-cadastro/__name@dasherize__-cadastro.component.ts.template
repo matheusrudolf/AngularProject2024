@@ -1,0 +1,48 @@
+import { Component, Input } from '@angular/core';
+import { CrudFormsAbstractComponent } from '@shared/templates/crud-forms-template.abstract';
+import { IForms } from '@model/components/nbs-forms';
+import { IModal } from '@model/components/nbs-modal';
+import { ControleService } from '@shared/services/controle.service';
+import { MessageService, ConfirmationService } from 'primeng/api';
+
+@Component({
+    selector: 'nbs-<%= selector %>-cadastro',
+    templateUrl: '../../../shared/templates/crud-forms-template.html',
+    styleUrls: ['./<%= dasherize(name) %>-cadastro.component.scss']
+})
+export class <%= classify(name) %>CadastroComponent extends CrudFormsAbstractComponent {
+    modalProps: IModal = {
+        titulo: 'Cadastrar',
+        exibeModal: false,
+        largura: '800px',
+        modalCadastro: true,
+        fileUpload: false
+    };
+    filtros: any = undefined;
+    formFiltros: IForms[] = [];
+    listas: any = { dealers: [], categoriaVenda: [], ano: [] };
+    formCadastro: IForms[] = [];
+    @Input() cadastro: any;
+
+    constructor(requestService: ControleService, messageService: MessageService, confirmationService: ConfirmationService) {
+        super(requestService, messageService, confirmationService);
+    }
+
+    protected constroiListas(): void {
+        /** Template para gerenciar as listas e requisição de listas usadas nos filtros ou cadastros */
+    }
+
+    protected constroiFormulario(): void {
+        /** Template para constroução do formulário de cadastro ou de filtros */
+        this.formCadastro = [];
+    }
+
+    protected tratarCampos(): void {
+        /** Template para tratamento dos dados de retorno do cadastro ou de filtragem */
+    }
+
+    protected limparFormulario(): void {
+        /** Template para rotina de limpeza do formulário de cadastro ou filtros */
+    }
+
+}

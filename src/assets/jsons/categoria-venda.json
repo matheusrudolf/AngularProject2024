@@ -1,0 +1,45 @@
+{
+  "filtros": [
+    {
+      "descricao": "Previsão Vendas Acessórios",
+      "id": 1
+    },
+    {
+      "descricao": "Previsão Vendas Clothing",
+      "id": 2
+    },
+    {
+      "descricao": "Previsão Vendas Mão de Obra",
+      "id": 3
+    },
+    {
+      "descricao": "Previsão Vendas Peças",
+      "id": 4
+    },
+    {
+      "descricao": "Previsão Vendas Outros",
+      "id": 5
+    },
+    {
+      "descricao": "Previsão Vendas Veículos",
+      "id": 6
+    },
+    {
+      "descricao": "Previsão de vendas SPNV Land Rover",
+      "id": 7
+    },
+    {
+      "descricao": "Previsão de vendas SPNV Jaguar",
+      "id": 8
+    },
+    {
+      "descricao": "Veículos VISTA Land Rover",
+      "id": 9
+    },
+    {
+      "descricao": "Veículos VISTA Jaguar",
+      "id": 10
+    }
+  ],
+  "rotulo": "Categoria Venda"
+}

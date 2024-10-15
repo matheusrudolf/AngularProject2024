@@ -1,0 +1,38 @@
+import { Component, OnInit } from '@angular/core';
+import { IModal } from '@model/components/nbs-modal';
+
+@Component({
+    selector: 'nbs-<%= selector %>',
+    templateUrl: './<%= dasherize(name) %>component.html',
+    styleUrls: ['./<%= dasherize(name) %>component.scss']
+})
+export class <%= classify(name) %>Component implements OnInit {
+    cadastro: any = {};
+    filtros: any = {};
+    exibeCadastro: boolean = false;
+    exibeFiltros: boolean = false;
+
+    constructor() { }
+
+    ngOnInit(): void { }
+
+    public recebeModalFiltros(modalProps: IModal): void {
+        modalProps.modalCadastro = false;
+        modalProps.exibeModal = !modalProps.exibeModal;
+    }
+
+    public recebeModalCadastro(modalProps: IModal): void {
+        modalProps.modalCadastro = true;
+        modalProps.exibeModal = !modalProps.exibeModal;
+    }
+
+    public recebeDadosCadastro(cadastro: any): void {
+        this.cadastro = cadastro;
+        /** Aplique as regras de recebimento de dados do Cadastro */
+    }
+
+    public recebeCancelarCadastro(): void {
+        this.cadastro = {};
+        /** Aplique as regras da ação de cancelamento do cadastro */
+    }
+}

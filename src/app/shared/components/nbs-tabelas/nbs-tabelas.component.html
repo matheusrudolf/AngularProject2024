@@ -1,0 +1,78 @@
+<p-table [value]="dados" [columns]="colunas" responsiveLayout="stack" [loading]="loading" [(selection)]="selecionados"
+  styleClass="p-datatable-sm p-datatable-gridlines p-datatable-striped shadow-3" [paginator]="dados.length >= 10" [rows]="10"
+  [first]="0" [rowsPerPageOptions]="[10, 25, 50, 100]" [showCurrentPageReport]="true"
+  currentPageReportTemplate="Exibindo {first} to {last} of {totalRecords} registros" (selectionChange)="capturaRegistros($event)">
+
+  <ng-template pTemplate="colgroup" let-columns>
+    <colgroup>
+      <col style="width: 2rem">
+    </colgroup>
+
+    @for (col of columns; track $index) {
+    <colgroup>
+      <col [style]="{ 'width': col.width }">
+    </colgroup>
+    }
+  </ng-template>
+
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th class="surface-900 text-white">
+        <p-tableHeaderCheckbox />
+      </th>
+
+      @for (col of columns; track $index) {
+      @if (col.field !== 'edit') {
+      <th [pSortableColumn]="col.field" class="surface-900 text-white">{{ col.header }}<p-sortIcon [field]="col.field">
+        </p-sortIcon>
+      </th>
+      } @else {
+      <th class="surface-900 text-white text-center">{{ col.header }}</th>
+      }
+      }
+
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      <td>
+        <p-tableCheckbox [value]="rowData"></p-tableCheckbox>
+      </td>
+
+      @for (col of columns; track $index) {
+
+      @if (col.field !== 'edit') {
+      <td>{{ rowData[col.field] }}</td>
+      } @else {
+      <td class="flex justify-content-center">
+        @if (acoesCustom) {
+        @for (btn of btnAcoesCustom; track $index) {
+        <p-button [icon]="btn.icon" [rounded]="btn.btnCirculo" [raised]="btn.btnSombreado" size="small"
+          [text]="btn.btnText" [pTooltip]="btn.tooltip" [severity]="btn.btnCor" [styleClass]="btn.class" (onClick)="btn.evento(rowData, btn)">
+        </p-button>
+        }
+        } @else {
+        <p-button icon="pi pi-file" [rounded]="true" [raised]="true" size="small" pTooltip="Ver registro"
+          severity="secondary" styleClass="mr-1" (onClick)="chamaModalVisualizacao(rowData)">
+        </p-button>
+        <p-button icon="pi pi-pencil" [rounded]="true" [raised]="true" size="small" pTooltip="Alterar registro"
+          severity="info" styleClass="mr-1" (onClick)="chamaModalAlteracao(rowData)">
+        </p-button>
+        <p-button icon="pi pi-trash" [rounded]="true" [raised]="true" size="small" pTooltip="Excluir registro"
+          severity="danger" (onClick)="removeRegistro(rowData)">
+        </p-button>
+        }
+      </td>
+      }
+      }
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="emptymessage">
+    <div class="border-1 surface-border surface-50 p-4">
+      <p class="text-center">Nenhum registro encontrado...</p>
+    </div>
+  </ng-template>
+
+</p-table>

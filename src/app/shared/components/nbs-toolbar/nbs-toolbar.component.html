@@ -1,0 +1,38 @@
+<p-toolbar>
+
+  <div class="p-toolbar-group-start">
+
+    @if (tabelaCrud) {
+    <p-button icon="pi pi-plus" severity="success" styleClass="mr-1" [rounded]="btnCirculo" [raised]="btnSombreado"
+      size="small" pTooltip="Novo registro" (onClick)="chamaModalNovoRegistro()">
+    </p-button>
+
+    <p-button icon="pi pi-trash" severity="danger" styleClass="mr-1" [rounded]="btnCirculo" [raised]="btnSombreado"
+      size="small" pTooltip="Excluir registros" [disabled]="selecionados.length <= 0" (onClick)="removeRegistrosSelecionados()">
+    </p-button>
+    }
+
+    <p-button icon="pi pi-refresh" styleClass="mr-1" [rounded]="btnCirculo" [raised]="btnSombreado" size="small"
+      pTooltip="Atualizar registros" (onClick)="recarregarDados()">
+    </p-button>
+
+  </div>
+
+  <div class="p-toolbar-group-end">
+
+    <p-button icon="pi pi-filter" severity="secondary" styleClass="mr-1" [rounded]="btnCirculo" [raised]="btnSombreado"
+      size="small" pTooltip="Definir filtros" (onClick)="chamaModalFiltros()">
+    </p-button>
+
+    @if (apenasXlsx) {
+    <p-button icon="pi pi-file-excel" styleClass="p-button-sm p-button-secondary mr-1" [rounded]="btnCirculo"
+      [raised]="btnSombreado" size="small" [outlined]="true" pTooltip="Exportar Excel">
+    </p-button>
+    } @else {
+    <p-splitButton icon="pi pi-file" [rounded]="btnCirculo" [raised]="btnSombreado" outlined severity="secondary"
+      size="small" pTooltip="Exportadores" [model]="exportMenu" />
+    }
+
+  </div>
+
+</p-toolbar>

@@ -1,0 +1,11 @@
+<nbs-previsao-venda-view #nbsView (emitModalFiltro)="recebeModalFiltros(nbsFiltro.modalProps)"
+    (emitModalCadastro)="recebeModalCadastro(nbsCadastro.modalProps)" (emitDadosCadastro)="recebeDadosCadastro($event)">
+</nbs-previsao-venda-view>
+
+<nbs-previsao-venda-cadastro #nbsCadastro [cadastro]="cadastro" [estado]="nbsView.estado"
+    [tabelaProps]="nbsView.tabelaProps" (emitCancelarCadastro)="recebeCancelarCadastro($event)"
+    (emiteNovoFormulario)="recebeConfirmacaoSalvar($event)">
+</nbs-previsao-venda-cadastro>
+
+<nbs-previsao-venda-filtro #nbsFiltro [filtros]="filtros" [tabelaProps]="nbsView.tabelaProps">
+</nbs-previsao-venda-filtro>

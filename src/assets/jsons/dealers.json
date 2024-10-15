@@ -1,0 +1,169 @@
+{
+  "filtros": [
+    {
+      "descricao": "AGO",
+      "id": 5
+    },
+    {
+      "descricao": "Autostar",
+      "id": 17
+    },
+    {
+      "descricao": "CB - Anália Franco",
+      "id": 7
+    },
+    {
+      "descricao": "CB - Ibirapuera",
+      "id": 6
+    },
+    {
+      "descricao": "CB - Villa Lobos",
+      "id": 8
+    },
+    {
+      "descricao": "Enzo",
+      "id": 9
+    },
+    {
+      "descricao": "Euro Motors",
+      "id": 12
+    },
+    {
+      "descricao": "Euroimport - Curitiba",
+      "id": 19
+    },
+    {
+      "descricao": "Euroimport - Londrina",
+      "id": 20
+    },
+    {
+      "descricao": "Euroimport - Maringá",
+      "id": 21
+    },
+    {
+      "descricao": "Extrema - Fortaleza",
+      "id": 1
+    },
+    {
+      "descricao": "Grand Brasil",
+      "id": 43
+    },
+    {
+      "descricao": "Land Belem",
+      "id": 45
+    },
+    {
+      "descricao": "Land Rio",
+      "id": 40
+    },
+    {
+      "descricao": "Maggi",
+      "id": 16
+    },
+    {
+      "descricao": "McLarty Maia - Brasilia",
+      "id": 47
+    },
+    {
+      "descricao": "McLarty Maia - DF",
+      "id": 2
+    },
+    {
+      "descricao": "McLarty Maia - Pacaembu",
+      "id": 3
+    },
+    {
+      "descricao": "McLarty Maia - PacaembuV",
+      "id": 46
+    },
+    {
+      "descricao": "McLarty Maia - Pinheiros",
+      "id": 4
+    },
+    {
+      "descricao": "Newland",
+      "id": 14
+    },
+    {
+      "descricao": "Osten",
+      "id": 11
+    },
+    {
+      "descricao": "PG Prime - Natal",
+      "id": 10
+    },
+    {
+      "descricao": "Raviera - Vitória",
+      "id": 42
+    },
+    {
+      "descricao": "Saga",
+      "id": 18
+    },
+    {
+      "descricao": "Silver Motors",
+      "id": 13
+    },
+    {
+      "descricao": "Soma Motors",
+      "id": 15
+    },
+    {
+      "descricao": "Stefanini",
+      "id": 41
+    },
+    {
+      "descricao": "Terranova",
+      "id": 44
+    },
+    {
+      "descricao": "Top Car - Blumenau",
+      "id": 22
+    },
+    {
+      "descricao": "Top Car - Camboriú",
+      "id": 23
+    },
+    {
+      "descricao": "Top Car - Chapecó",
+      "id": 24
+    },
+    {
+      "descricao": "Top Car - Florianópolis",
+      "id": 25
+    },
+    {
+      "descricao": "Top Car - Porto Alegre",
+      "id": 26
+    },
+    {
+      "descricao": "Urca - Ribeirão Preto",
+      "id": 39
+    },
+    {
+      "descricao": "Urca Prime",
+      "id": 38
+    },
+    {
+      "descricao": "Way - Joao Pessoa",
+      "id": 29
+    },
+    {
+      "descricao": "Way - Manaus",
+      "id": 28
+    },
+    {
+      "descricao": "Way - Recife",
+      "id": 30
+    },
+    {
+      "descricao": "Way - Salvador",
+      "id": 37
+    },
+    {
+      "descricao": "Way - Sao Luis",
+      "id": 27
+    }
+  ],
+  "rotulo": "Dealer"
+}

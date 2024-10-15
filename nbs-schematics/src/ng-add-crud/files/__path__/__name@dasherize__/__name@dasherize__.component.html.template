@@ -1,0 +1,5 @@
+<nbs-<%= selector %>-view #nbsView></nbs-<%= selector %>-view>
+
+<nbs-<%= selector %>-cadastro #nbsCadastro></nbs-<%= selector %>-cadastro>
+
+<nbs-<%= selector %>-filtro #nbsFiltro></nbs-<%= selector %>-filtro>

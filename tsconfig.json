@@ -2,9 +2,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "types": ["node"],
+    "baseUrl": "src",
+    "paths": {
+      "@model/*": ["app/model/*"],
+      "@shared/*": ["app/shared/*"]
+    },
     "outDir": "./dist/out-tsc",
-    "strict": true,
-    "noImplicitOverride": true,
+    "strict": false,
+    "noImplicitOverride": false,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
